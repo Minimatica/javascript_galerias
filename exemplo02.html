@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             box-sizing: border-box;
             font-family: sans-serif;
         }
 
+        .parallax-windows {
+            height: 400px;
+            background: transparent;
+
+        }
+
+        .text{
+         margin-bottom: 20px;
+        }
+
+        .img{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        }
     </style>
 </head>
+
 <body>
     <h1>Marvel Heroes</h1>
-    <img src="img/capitao-america.jpg">
-    <h1>Capitão America</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
+    <div class="img"> <img src="img/capitao-america.jpg"></div>
+  
 
+    <div class="text"><h1>Capitão America</h1>
+        <br>
+        <p>O Capitão América, ou Steve Rogers, é um super-herói icônico da Marvel Comics, criado em 1941. Originalmente um
+            jovem frágil, ele se torna um super-soldado durante a Segunda Guerra Mundial após tomar um soro experimental.
+            Com seu uniforme patriótico e escudo de vibranium, ele luta por liberdade e justiça, liderando os Vingadores e
+            enfrentando vilões como o Caveira Vermelha. Conhecido por sua força moral e liderança, o Capitão América é uma
+            figura inspiradora na cultura pop.</p></div>
+    
+    <br>
+    <br>
 
-    <img src="img/homem-de-ferro.jpg">
-    <h1>Homem de Ferro</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
+    <div class="parallax-windows" data-parallax="scroll" data-image-src="img/capitao-america-grande.jpg"></div>
 
+    <div class="img"><img src="img/homem-de-ferro.jpg"></div>
+    
+    <div class="text">
+        <h1>Homem de Ferro</h1>
+        <br>
+    <p>O Homem de Ferro, ou Tony Stark, é um super-herói icônico da Marvel Comics, criado em 1963 por Stan Lee, Larry
+        Lieber, Don Heck e Jack Kirby. Tony Stark é um gênio bilionário, inventor e filantropo que, após sofrer um grave
+        ferimento no peito, cria uma armadura avançada para salvar sua vida e combater o crime. Com seu traje
+        tecnológico, ele se torna o Homem de Ferro, um defensor da justiça e um membro fundamental dos Vingadores.
+        Conhecido por sua inteligência, carisma e bravura, Tony Stark é uma figura central no universo Marvel.</p>
+    </div>
+    
+    <div class="parallax-windows" data-parallax="scroll" data-image-src="img/homem-de-ferro-grande.jpg"></div>
+   
+    <div class="img"><img src="img/wolverine.jpg"> </div>
+    <div class="text">
+        <h1>Wolverine</h1>
+        <br>
+        <p>Wolverine, ou Logan, é um super-herói icônico da Marvel Comics, criado por Roy Thomas, Len Wein e John Romita
+            Sr., estreando em 1974. Ele é um mutante com poderes de regeneração, sentidos aguçados e garras de
+            adamantium, um metal indestrutível. Wolverine é conhecido por seu temperamento feroz e habilidades de
+            combate excepcionais. Como membro dos X-Men, ele luta por paz e igualdade entre humanos e mutantes. Sua
+            personalidade complexa e sua busca por identidade fazem de Wolverine uma figura fascinante e popular na
+            cultura pop.</p>
+    </div>
 
-    <img src="img/wolverine.jpg">
-    <h1>Wolverine</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In neque minima nihil et iure maiores laboriosam cupiditate aliquam sint, corporis sapiente. Temporibus placeat quasi itaque asperiores enim, dignissimos unde repudiandae.</p>
+    <div class="parallax-windows" data-parallax="scroll" data-image-src="img/wolverine-grande.jpg"></div>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.js"></script>
 </body>
+
 </html>
