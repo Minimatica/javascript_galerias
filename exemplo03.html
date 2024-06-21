@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax</title>
-  <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+      
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="colorbox/example5/colorbox.css">
     <style>
         * {
             margin: 0;
@@ -17,14 +19,30 @@
 
 <body>
     <!-- http://miromannino.github.io/Justified-Gallery/ -->
-<h1>Galeria de Fotos</h1>    
+    <h1>Galeria de Fotos</h1>
+    <div id="mygallery">
+        <div><a class="group1" href="img/capitao-america.jpg" title="Capitão America">Foto do Capitão America<img
+                    src="img/capitao-america.jpg" width="50"></a></div>
+        <div><a class="group1" href="img/capitao-america-grande.jpg" title="Capitão America">Foto do Capitão America<img
+                    src="img/capitao-america-grande.jpg" width="50"></a></div>
+        <div> <a class="group1" href="img/homem-de-ferro.jpg" title="Homem de Ferro">Foto do Homem de Ferro <img
+                    src="img/homem-de-ferro.jpg" width="50"></a> </div>
+        <div> <a class="group1" href="img/homem-de-ferro-grande.jpg" title="Homem de Ferro">Foto do Homem de Ferro <img
+                    src="img/homem-de-ferro-grande.jpg" width="50"></a> </div>
+        <div> <a class="group1" href="img/wolverine.jpg" title="Wolverine">Foto do Wolverine<img
+                    src="img/wolverine.jpg" width="50"></a></div>
+        <div> <a class="group1" href="img/wolverine-grande.jpg" title="Wolverine">Foto do Wolverine<img
+                    src="img/wolverine-grande.jpg" width="50"></a></div>
+    </div>
 
-  <img src="img/capitao-america.jpg">
-  <img src="img/capitao-america-grande.jpg">
-  <img src="img/homem-de-ferro.jpg">
-  <img src="img/homem-de-ferro-grande.jpg">
-    <img src="img/wolverine.jpg">
-    <img src="img/wolverine-grande.jpg">
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+        $('#mygallery').justifiedGallery()
+        $('.group1').colorbox()
+    </script>
 
 </body>
 
